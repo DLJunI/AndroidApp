@@ -14,7 +14,8 @@
         android:text="기능을 선택해주세요!"
         android:textSize="22sp"
         android:layout_gravity="center"
-        android:textColor="4a4a4a"
+        android:textColor="#4a4a4a"
         android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp"/>
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold"/>
 </LinearLayout>
