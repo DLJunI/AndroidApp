@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2e6e6"
+    tools:context=".InsideViewActivity">
+
+    <ImageView
+        android:id="@+id/ImageFromPiImageView"
+        android:layout_gravity="center"
+        android:layout_width="430dp"
+        android:layout_height="550dp"
+        android:layout_margin="30dp"
+        android:src="@drawable/wait_for_image" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/takePictureButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#87c1b7"
+            android:text="사진찍기" />
+
+        <Button
+            android:id="@+id/goBackButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#ec4624"
+            android:text="돌아가기" />
+    </LinearLayout>
+</LinearLayout>
