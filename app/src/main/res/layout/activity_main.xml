@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+    android:background="#F4F4EF"
     android:orientation="vertical">
 
     <TextView
@@ -18,4 +19,25 @@
         android:layout_marginTop="30dp"
         android:layout_marginBottom="30dp"
         android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/buttonbackground_drawable"
+        android:backgroundTint="#E3E6D6"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/bluetooth_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/bluetooth_logo" />
+
+    </LinearLayout>
+
 </LinearLayout>
