@@ -14,11 +14,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button viewInSide = findViewById(R.id.viewInSideButton);
-
         Intent toInsiderViewActivty = new Intent(MainActivity.this, InsideViewActivity.class);
+
+        Button insideLedControl = findViewById(R.id.insideLedControlButton);
+        Intent toLedControlActivity = new Intent(MainActivity.this, LedControlActivity.class);
 
         viewInSide.setOnClickListener(view -> {
             startActivity(toInsiderViewActivty);
+        });
+
+        insideLedControl.setOnClickListener(v -> {
+            startActivity(toLedControlActivity);
         });
     }
 }
