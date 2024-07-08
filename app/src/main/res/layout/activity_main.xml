@@ -48,7 +48,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="80dp"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
         android:background="@drawable/buttonbackground_drawable"
@@ -67,6 +67,30 @@
             android:textStyle="bold"
             android:textSize="20sp"
             android:text="내부 LED 조절하기" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/buttonbackground_drawable"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/servoControlButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#009c00"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="문 열기 / 닫기" />
     </LinearLayout>
 
 </LinearLayout>

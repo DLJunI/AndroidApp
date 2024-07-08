@@ -16,6 +16,9 @@
         android:theme="@style/Theme.Mdpapp"
         tools:targetApi="31">
         <activity
+            android:name=".ServoControlActivity"
+            android:exported="false" />
+        <activity
             android:name=".LedControlActivity"
             android:exported="false" />
         <activity

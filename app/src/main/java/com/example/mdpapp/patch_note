@@ -1,5 +1,6 @@
 <Patch Note>
 [Ver 0.x ~ 1] 2024.03.29 ~ 2024.04.20 (beta) Configured the basic framework.
 ---------- Released on Gitcode ----------
-[Ver 1.1] 2024.06.20 - (new) appended LED control code
+[Ver 1.1] 2024.06.20 - (new) appended LED control code.
 [Ver 1.2] 2024.06.21 - (refactoring) made "ApiCaller", Responsible for all API calls.
+[Ver 1.3] 2024.07.08 - (new) appended Servo Motor control code.

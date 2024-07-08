@@ -19,12 +19,19 @@ public class MainActivity extends AppCompatActivity {
         Button insideLedControl = findViewById(R.id.insideLedControlButton);
         Intent toLedControlActivity = new Intent(MainActivity.this, LedControlActivity.class);
 
+        Button servoControl = findViewById(R.id.servoControlButton);
+        Intent toServoControlActivity = new Intent(MainActivity.this, ServoControlActivity.class);
+
         viewInSide.setOnClickListener(view -> {
             startActivity(toInsiderViewActivty);
         });
 
         insideLedControl.setOnClickListener(v -> {
             startActivity(toLedControlActivity);
+        });
+
+        servoControl.setOnClickListener(v -> {
+            startActivity(toServoControlActivity);
         });
     }
 }

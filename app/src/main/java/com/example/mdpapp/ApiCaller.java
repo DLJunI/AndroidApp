@@ -83,4 +83,40 @@ public class ApiCaller {
             }
         });
     }
+
+    public void openDoor() {
+        apiService.openDoor().enqueue(new Callback<ResponseBody>() {
+            @Override
+            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                if (response.isSuccessful()) {
+                    Toast.makeText(context, "Door opened!", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(context, "Failed to open door!", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ResponseBody> call, Throwable t) {
+                Toast.makeText(context, "Error: " + t.getMessage(), Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+
+    public void closeDoor() {
+        apiService.closeDoor().enqueue(new Callback<ResponseBody>() {
+            @Override
+            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                if (response.isSuccessful()) {
+                    Toast.makeText(context, "Door closed!", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(context, "Failed to close door!", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ResponseBody> call, Throwable t) {
+                Toast.makeText(context, "Error: " + t.getMessage(), Toast.LENGTH_LONG).show();
+            }
+        });
+    }
 }

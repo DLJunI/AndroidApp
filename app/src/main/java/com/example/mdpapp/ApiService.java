@@ -13,5 +13,11 @@ public interface ApiService {
 
     @GET("led/off")
     Call<ResponseBody> turnOffLed();
+
+    @GET("door/open")
+    Call<ResponseBody> openDoor();
+
+    @GET("door/close")
+    Call<ResponseBody> closeDoor();
 }
 
